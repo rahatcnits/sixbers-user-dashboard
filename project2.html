@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stream/Current | Sixbers User Dashboard</title>
+
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- Font Awesome Link -->
+    <script src="./assets/js/fontawesome.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav id="navbar">
+      <div class="navbar_wrapper">
+        <div class="logo">
+          <a href="#">
+            <img src="./assets/img/logo.svg" alt="" />
+          </a>
+        </div>
+
+        <ul class="nav_items">
+          <li>
+            <a href="./index.html">Activity</a>
+          </li>
+          <li>
+            <a href="./project.html" class="active">Projects</a>
+          </li>
+        </ul>
+
+        <div class="user_items">
+          <button type="button" class="user_profile">
+            <div class="user_avatar">
+              <img src="./assets/img/user_avatar.png" alt="" />
+            </div>
+            <span>John Smith</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Stream Project Start -->
+    <section id="stream_project">
+      <div class="stream_project_wrapper">
+        <div class="stream_project_header daily_project_header">
+          <div class="daily_project_user">
+            <div class="daily_project_user_avatar">
+              <img src="./assets/img/user_resume_avatar.png" alt="" />
+            </div>
+            <h2>Alex Mika</h2>
+          </div>
+
+          <div class="project_search daily_project_search">
+            <div class="project_datepicker">
+              <div class="project_pie_chart">
+                <svg width="100" height="100" class="chart-container">
+                  <circle
+                    cx="35"
+                    cy="35"
+                    r="30"
+                    class="back"
+                    fill="none"
+                    class="back"
+                  />
+                  <circle cx="50" cy="50" r="30" class="front" fill="none" />
+                </svg>
+                <div class="percentage">8.0</div>
+              </div>
+
+              <div class="datepicker_btn">
+                <div class="project_datepicker_btn daily_project_datepicker_btn">
+                  <button type="button" class="tab_datepicker_prev_btn">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.16667 1.625L1 6M1 6L5.16667 10.375M1 6L11 6"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <span>Sat, 27-04-2024</span>
+
+                  <button type="button" class="tab_datepicker_next_btn">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.83333 1.625L11 6M11 6L6.83333 10.375M11 6L1 6"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <form class="project_search_form daily_project_search_form">
+              <div class="search_box">
+                <img src="./assets/icons/search_icon.svg" alt="" />
+                <input type="text" placeholder="Search Project" />
+              </div>
+              <button type="submit" class="project_search_btn">GO</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="stream_project_main_content">
+          <div class="projects_wrapper">
+            <div class="project_head">
+              <div class="project_img">
+                <img src="./assets/img/project_img.png" alt="" />
+              </div>
+              <h2>User Daily Project 1</h2>
+            </div>
+
+            <div class="project_items">
+              <div class="accordion-content">
+                <header>
+                  <div class="accordion_head">
+                    <div class="accordion_icon">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <span class="title">User Daily Task 1</span>
+                  </div>
+
+                  <div class="project_progress_items">
+                    <div class="project_progress_item">
+                      <div class="project_progress_title2">
+                        Estimated Man-Days
+                      </div>
+                      <div class="project_progress_bar yellow">
+                        <div class="project_progress_thumb"></div>
+                      </div>
+                      <span>18 j/h</span>
+                    </div>
+
+                    <div class="project_progress_item">
+                      <div class="project_progress_title2">
+                        Actual Man-Days Completed
+                      </div>
+                      <div class="project_progress_bar red">
+                        <div class="project_progress_thumb"></div>
+                      </div>
+                      <span>23 j/h</span>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="description">
+                  <div class="project_users_chart">
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">8.0</div>
+                      <div class="chart_title">
+                        <h2>Dashboard</h2>
+                        <p>Web</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front2"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">1.0</div>
+                      <div class="chart_title">
+                        <h2>Mobile app</h2>
+                        <p>Mobile</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front3"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">0.0</div>
+                      <div class="chart_title">
+                        <h2>Website</h2>
+                        <p>Website</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front3"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">0.0</div>
+
+                      <div class="chart_title">
+                        <h2>Email</h2>
+                        <p>Web</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front3"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">0.0</div>
+                      <div class="chart_title">
+                        <h2>Graphics</h2>
+                        <p>Desktop</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front4"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">8.0</div>
+                      <div class="chart_title">
+                        <span>Rollover</span>
+                        <h2>Animation</h2>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-content">
+                <header>
+                  <div class="accordion_head">
+                    <div class="accordion_icon">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <span class="title">User Daily Task 2</span>
+                  </div>
+
+                  <div class="project_progress_items">
+                    <div class="project_progress_item">
+                      <div class="project_progress_title2">
+                        Estimated Man-Days
+                      </div>
+                      <div class="project_progress_bar yellow">
+                        <div class="project_progress_thumb"></div>
+                      </div>
+                      <span>18 j/h</span>
+                    </div>
+
+                    <div class="project_progress_item">
+                      <div class="project_progress_title2">
+                        Actual Man-Days Completed
+                      </div>
+                      <div class="project_progress_bar red">
+                        <div class="project_progress_thumb"></div>
+                      </div>
+                      <span>23 j/h</span>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="description">
+                  <div class="project_users_chart">
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">8.0</div>
+                      <div class="chart_title">
+                        <h2>Dashboard</h2>
+                        <p>Web</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front2"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">1.0</div>
+                      <div class="chart_title">
+                        <h2>Mobile app</h2>
+                        <p>Mobile</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front3"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">0.0</div>
+                      <div class="chart_title">
+                        <h2>Website</h2>
+                        <p>Website</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front3"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">0.0</div>
+
+                      <div class="chart_title">
+                        <h2>Email</h2>
+                        <p>Web</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front3"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">0.0</div>
+                      <div class="chart_title">
+                        <h2>Graphics</h2>
+                        <p>Desktop</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front4"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">8.0</div>
+                      <div class="chart_title">
+                        <span>Rollover</span>
+                        <h2>Animation</h2>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-content">
+                <header>
+                  <div class="accordion_head">
+                    <div class="accordion_icon">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <span class="title">User Daily Task 3</span>
+                  </div>
+
+                  <div class="project_progress_items">
+                    <div class="project_progress_item">
+                      <div class="project_progress_title2">
+                        Estimated Man-Days
+                      </div>
+                      <div class="project_progress_bar yellow">
+                        <div class="project_progress_thumb"></div>
+                      </div>
+                      <span>18 j/h</span>
+                    </div>
+
+                    <div class="project_progress_item">
+                      <div class="project_progress_title2">
+                        Actual Man-Days Completed
+                      </div>
+                      <div class="project_progress_bar red">
+                        <div class="project_progress_thumb"></div>
+                      </div>
+                      <span>23 j/h</span>
+                    </div>
+                  </div>
+                </header>
+
+                <div class="description">
+                  <div class="project_users_chart">
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">8.0</div>
+                      <div class="chart_title">
+                        <h2>Dashboard</h2>
+                        <p>Web</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front2"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">1.0</div>
+                      <div class="chart_title">
+                        <h2>Mobile app</h2>
+                        <p>Mobile</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front3"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">0.0</div>
+                      <div class="chart_title">
+                        <h2>Website</h2>
+                        <p>Website</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front3"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">0.0</div>
+
+                      <div class="chart_title">
+                        <h2>Email</h2>
+                        <p>Web</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front3"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">0.0</div>
+                      <div class="chart_title">
+                        <h2>Graphics</h2>
+                        <p>Desktop</p>
+                      </div>
+                    </div>
+
+                    <div class="pie_chart">
+                      <svg width="120" height="120" class="chart-container">
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="back"
+                          fill="none"
+                          class="back"
+                        />
+                        <circle
+                          cx="50"
+                          cy="50"
+                          r="40"
+                          class="front front4"
+                          fill="none"
+                        />
+                      </svg>
+                      <div class="percentage">8.0</div>
+                      <div class="chart_title">
+                        <span>Rollover</span>
+                        <h2>Animation</h2>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Stream Project End -->
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/accordion.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
